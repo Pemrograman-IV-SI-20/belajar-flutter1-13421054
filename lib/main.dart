@@ -77,9 +77,21 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Center(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
+              Center(
+                child: Image.asset(
+                  'assets/images/man.png',
+                  height: 100,
+                  width: 100,
+                ),
+              ),
+              Image.network(
+                'https://cdn-icons-png.flaticon.com/512/2202/2202112.png',
+                height: 100,
+                width: 100,
+              ),
               Text(
                 "Belajar Flutter 1",
                 style: TextStyle(fontSize: 30, color: Colors.blue),
